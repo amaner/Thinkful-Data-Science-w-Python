@@ -45,23 +45,23 @@ plt.clf()
 
 First pairing - instances 4222 and 3789, both of class 2.  Note the clear similarites, despite the noise.
 
-![alt text](https://github.com/amaner/waveforms/blob/master/two_random_waveforms_1.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/two_random_waveforms_1.png)
 
 Second pairing - instances 2102 and 1294, both of class 0.  Note again the clear similarities.
 
-![alt text](https://github.com/amaner/waveforms/blob/master/two_random_waveforms_2.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/two_random_waveforms_2.png)
 
 Third pairing - instances 2556 and 2024.  These are from classes 0 and 1, respectively, and have clear differences *and* similarities.  
 
-![alt text](https://github.com/amaner/waveforms/blob/master/two_random_waveforms_3.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/two_random_waveforms_3.png)
 
 Fourth pairing - instances 3918 and 1516.  These are from 0 and 2, respectively, and are very much different (would almost cancel).
 
-![alt text](https://github.com/amaner/waveforms/blob/master/two_random_waveforms_4.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/two_random_waveforms_4.png)
 
 Fifth pairing - instances 2382 and 2916.  These are from classes 1 and 2, respectively, and have clear differences *and* similarities (as in the third pairing).
 
-![alt text](https://github.com/amaner/waveforms/blob/master/two_random_waveforms_5.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/two_random_waveforms_5.png)
 
 This is by no means an exhaustive exploration of how waveforms of different (and equal) classes compare and contrast, but we can see that some class pairings have quite distinct differences, while others are a bit more difficult to tell apart.  In addition, waveforms of the same class are likely to display clear similarities.
 
@@ -85,19 +85,19 @@ plt.clf()
 
 First pairing - features 11 and 20.  These are tightly balled together, showing little if any correlation.
 
-![alt text](https://github.com/amaner/waveforms/blob/master/features_1.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/features_1.png)
 
 Second pairing - features 6 and 16.  Clear evidence of some correlation here.
 
-![alt text](https://github.com/amaner/waveforms/blob/master/features_2.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/features_2.png)
 
 Third pairing - features 13 and 6.  Again, clear evidence of correlation.
 
-![alt text](https://github.com/amaner/waveforms/blob/master/features_3.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/features_3.png)
 
 Fourth pairing - features 20 and 21.  These are tightly balled together, showing little if any correlation.
 
-![alt text](https://github.com/amaner/waveforms/blob/master/features_4.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/features_4.png)
 
 Step 4: Look for correlations among features and between features and the class variable.
 
@@ -114,7 +114,7 @@ show()
 
 From this we can see that some distinct patterns.  For example, neighboring features (in terms of index) tend to be positively correlated (e.g. features 5 and 6), while non-neighboring features (in terms of index) tend to be negatively correlated (e.g. features 6 and 14).  In addition, it is apparent that "mid" features (indices 9-15) tend to be positively correlated with class, while "low" features (indices 1-7) tend to be negatively correlated with class.  In addition, some features have practially no correlation with class.  (This will be important.) 
 
-![alt text](https://github.com/amaner/waveforms/blob/master/correlation_heatmap.png)
+![alt text](https://github.com/amaner/Thinkful-Data-Science-w-Python/blob/master/waveforms-master/correlation_heatmap.png)
 
 #### Feature Extraction (cap_rand_forest_extract.py)
 
