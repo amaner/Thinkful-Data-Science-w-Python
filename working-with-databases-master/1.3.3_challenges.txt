@@ -1,0 +1,29 @@
+# 1.3.3_challenges.txt
+# Andrew Maner
+# queries verified to work in sqlite3
+
+# write a SQL statement which finds the mean of the average
+# high temperatures for all of the cities within a state
+SELECT state, AVG(average_high) FROM weather
+	INNER JOIN cities
+	ON city = name
+	GROUP BY state;
+
+# write a SQL statement which finds the mean of the average
+# high temperatures for all of the cities within a state,
+# starting with the hottest
+SELECT state, AVG(average_high) FROM weather
+	INNER JOIN cities
+	ON city = name
+	GROUP BY state
+	ORDER BY average_high DESC;
+
+# write a SQL statement which finds the mean of the average high
+# temperatures for all of the cities within a state, starting with
+# the hottest, and filtering out states with a mean above 65F
+SELECT state, AVG(average_high) FROM weather
+	INNER JOIN cities
+	ON city = name
+	GROUP BY state
+	HAVING AVG(average_high) <= 65
+	ORDER BY average_high DESC;
